@@ -26,6 +26,10 @@ moshi-offline = "moshi.offline:main"
 [tool.setuptools.dynamic]
 version = {attr = "moshi.__version__"}
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["moshi*"]
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
